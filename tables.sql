@@ -10,6 +10,16 @@ CREATE TABLE roles (
     UNIQUE KEY roles_role_name_unique (role_name)
 );
 
+
+INSERT INTO roles(role_name,role_code,is_active)
+VALUES('ADMINISTRADOR','ADMIN',1)
+
+INSERT INTO roles(role_name,role_code,is_active)
+VALUES('PARTICIPANTE','PARTI',1)
+
+INSERT INTO roles(role_name,role_code,is_active)
+VALUES('ORGANIZADOR','ORGA',1)
+
 -- Tabla de usuarios
 CREATE TABLE users (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
